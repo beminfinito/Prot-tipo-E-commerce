@@ -1,0 +1,683 @@
+   <div id="greenMenu" class="evtDrop row nhgpa_centered"><!-- INI comp(menu,1423) -->
+
+
+
+<div class="nhgpa_col-logo-top">
+    <div class="nhgpa_logo-top">
+        <a href="/"><span>Pão de açucar</span></a>
+    </div>
+</div>
+
+<div class="nhgpa_col-search-top">
+    <div class="nhgpa_search nhgpa_text-search">
+        <a href="http://www.paodeacucar.com.br/faleConosco/formDelivery" target="_self">Central de atendimento</a> | São Paulo (11) 3055-6767 | Demais localidades 4004-6070
+    </div>
+    <form class="nhgpa_search" action="http://busca.paodeacucar.com/search">
+        <input type="hidden" name="view" value="grid">
+        <input type="hidden" name="asug">
+        <input type="text" name="w" id="sli_search_1" placeholder="Buscar um ou mais produtos (ex.: arroz, feijão...)" class="nhgpa_input-search" autocomplete="off">
+        <button type="submit" class="nhgpa_btn-search"></button>
+    </form>
+    <div class="nhgpa_search-result">
+    </div>
+</div>
+
+<div class="nhgpa_col-login-top">
+    <div class="nhgpa_main-user">
+        <a href="http://www.paodeacucar.com/#" id="loginAccountNameInfo" class="nhgpa_login loggedGreatingLogo" data-box="#nhgpa_box_logged" style="display: none;"></a>
+        <a href="http://www.paodeacucar.com/#" class="nhgpa_login notLoggedGreatingLogo" data-box="#nhgpa_box_login">ENTRE</a>
+        <a href="http://www.paodeacucar.com/#" class="nhgpa_register notLoggedGreatingLogo" data-box="#nhgpa_box_register">CADASTRE-SE</a>
+
+        <div class="nhgpa_cart_wrapper">
+            <a class="nhgpa_cart" href="/carrinho" target="_self">
+                <span class="nhgpa_count-cart">0</span>
+                <span class="nhgpa_text">MEU CARRINHO</span>
+                <span class="nhgpa_ammount-cart">
+                    <span class="nhgpa_ammount-currency">R$</span>
+                    <span id="catalogTotalBasketInfo" class="nhgpa_ammount-nodecimal"></span>
+                    <span id="catalogTotalBasketInfoDecimal" class="nhgpa_ammount-decimal"></span>
+                </span>
+            </a>
+            <div class="nhgpa_box_cart">
+
+                <!-- ProductModel -->
+                <div style="display: none;">
+                    <hr class="nhgpa_cart_separator">
+                    <li class="nhgpa_cart_full miniCartProductModel">
+                        <a href="https://chk.paodeacucar.com/basket/showBasket">
+                            <div class="nhgpa_cart_foto">
+                                <img src="http://www.paodeacucar.com/" border="0" alt="produto" title="produto">
+                            </div>
+                            <div class="nhgpa_cart_titulo_produto product-name"></div>
+                            <div class="nhgpa_cart_valor_produto">
+                                <span class="qtde product-quantity">1 X R$</span>
+                                <span class="valor product-price__value">14,00</span>
+                            </div>
+                        </a>
+                        <span class="clear"></span>
+                    </li>
+                </div>
+                <!--/ ProductModel -->
+
+                <div class="viewport">
+                    <ul class="miniCartTargetUL">
+                    </ul>
+                </div>
+                <ul>
+                    <li class="nhgpa_cart_total">
+                        Itens adicionados: <span class="itensQuantity"></span><br>
+                        Subtotal da compra: R$ <span class="subTotalValue"></span>
+                    </li>
+                    <li class="nhgpa_cart_total second">
+                        <span class="total">TOTAL</span>
+                        <span class="total_valor totalValue"></span>
+                        <a href="https://chk.paodeacucar.com/basket/showBasket" class="button">FECHAR COMPRA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="nhgpa_box_logged" class="nhgpa_box_login" style="display: none;">
+            <ul class="nhgpa_menu_user">
+                <li class="lists">
+                    <a href="https://chk.paodeacucar.com/shoppingList/list">Minhas listas</a>
+                </li>
+                <li class="orders">
+                    <a href="https://chk.paodeacucar.com/order/status">Minhas compras</a>
+                </li>
+                <li class="customer-info">
+                    <a href="https://chk.paodeacucar.com/customer/edit">Dados cadastrais</a>
+                </li>
+                <li class="addresses">
+                    <a href="https://chk.paodeacucar.com/address/chooseAddress">Endereços</a>
+                </li>
+                <li class="viva-vinhos">
+                    <a href="https://chk.paodeacucar.com/subscriptionManager/index">Assinaturas</a>
+                </li>
+                <li class="exit">
+                    <a href="https://chk.paodeacucar.com/login/logout">Sair</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="nhgpa_box_register" class="nhgpa_box_register" style="display: none;">
+            <p>Aproveite os benefícios de ser um cliente Pão de Açúcar</p>
+            <a href="https://chk.paodeacucar.com/login/login" class="button bt_nhgpa_conta">CRIAR UMA CONTA</a>
+            
+        </div>
+
+        <form id="nhgpa_box_login" action="https://chk.paodeacucar.com/login/handleLogin" method="post" class="nhgpa_box_login" autocomplete="off" style="display: none;">
+            <p>Faça seu login</p>
+            <div class="nhgpa_box_login_email">
+                <label for="email">E-mail</label>
+                <input type="text" name="userLogin" id="email" class="email" autocomplete="off" placeholder="Ex: José@email.com" data-validation-rule="email" tabindex="1">
+                <span class="nhgpa_recovery"><a href="https://chk.paodeacucar.com/recoverEmail/index">Esqueceu seu email?</a></span>
+            </div>
+            <div class="nhgpa_box_login_senha">
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" class="email" autocomplete="off" placeholder="Ex: 00000" tabindex="2">
+                <span class="nhgpa_recovery"><a href="https://chk.paodeacucar.com/recoverPass/index">Esqueceu sua senha?</a></span>
+            </div>
+            <button type="submit" class="button bt_nhgpa_login" tabindex="3">ENTRAR</button>
+            
+        </form>
+    </div>
+</div>
+<nav class="nhgpa_line-menu" style="display: none;">
+    <div class="nhgpa_menu-drop">
+        <ul>
+            <li class="nhgpa_noborder">
+                <a href="http://www.paodeacucar.com/#" border="0">
+                    <div class="nhgpa_icon_menu nhgpa_2lines">
+                        <img src="/img/511154.png" border="0" alt="Todos produtos" title="Todos produtos" class="nhgpa_first">
+                    </div>
+                    <br>TODOS OS PRODUTOS
+                </a>
+                <div class="nhgpa_submenu  double-menu" id="nhgpa_submenu_1" style="margin-left: -67px;">
+                    <div class="nhgpa_submenu-arrow" style="margin-left: -74px;"></div>
+                <div class="nhgpa_list nhgpa_first-submenu">
+                    
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C4233/limpeza" border="0">Limpeza</a><br>
+                    
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C4215/bebidas" border="0">Bebidas</a><br>
+                    
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C4205/feira" border="0">Feira</a><br>
+                    
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C4226/carnes" border="0">Carnes</a><br>
+                    
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C4223/alimentos" border="0">Alimentos</a><br>
+                    
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C4229/bebes" border="0">Bebês</a><br>
+                    
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C4231/perfumaria" border="0">Perfumaria</a><br>
+                    
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C4222/matinais" border="0">Matinais</a><br>
+                    
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C4228/biscoitos-e-snacks" border="0">Biscoitos e Snacks</a><br>
+                    
+                        
+                            </div>
+                            <div class="nhgpa_list">
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C4209/congelados" border="0">Congelados</a><br>
+                    
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C4227/doces-e-sobremesas" border="0">Doces e Sobremesas</a><br>
+                    
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C4236/pet-shop" border="0">Pet Shop</a><br>
+                    
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C183/etnicos" border="0">Étnicos</a><br>
+                    
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C4214/artigos-para-o-lar" border="0">Artigos para o Lar</a><br>
+                    
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C4235/floricultura-e-jardinagem" border="0">Floricultura e Jardinagem</a><br>
+                    
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C4195/marcas-exclusivas" border="0">Marcas Exclusivas</a><br>
+                    
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C4225/massas" border="0">Massas</a><br>
+                    
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C4224/molhos-e-condimentos" border="0">Molhos e Condimentos</a><br>
+                    
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C4210/naturais-e-funcionais" border="0">Naturais e Funcionais</a><br>
+                    
+                        
+                            </div>
+                            <div class="nhgpa_list">
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C4212/organicos" border="0">Orgânicos</a><br>
+                    
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C4208/padaria" border="0">Padaria</a><br>
+                    
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C4637/peixaria" border="0">Peixaria</a><br>
+                    
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C4206/queijos-e-frios" border="0">Queijos e Frios</a><br>
+                    
+                        
+                        <a href="http://www.paodeacucar.com/secoes/C5095/natal" border="0">Natal</a><br>
+                    
+                </div>
+                    <div class="nhgpa_list nhgpa_last-submenu">
+                        
+                    </div>
+                </div>
+            </li>
+            
+                <li class="item_menu_limpeza">
+                    <a href="http://www.paodeacucar.com/secoes/C4233/limpeza" border="0">
+                        <div class="nhgpa_icon_menu">
+                            <img src="/img/511153.png" border="0" alt="Limpeza" title="Limpeza">
+                        </div> <span>Limpeza</span>
+                    </a>
+
+                    
+
+                    
+
+                        <div class="nhgpa_submenu" style="margin-left: 0px;">
+                            <div class="nhgpa_submenu-arrow" style="margin-left: -7px;"></div>
+                        <div class="nhgpa_list nhgpa_first-submenu">
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4233/lustra-moveis-e-cia?&amp;ftr=facetSubShelf_ss:4233_Lustra%20m%C3%B3veis%20e%20cia" border="0">Lustra móveis e cia</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4233/cozinha?&amp;ftr=facetSubShelf_ss:4233_Cozinha" border="0">Cozinha</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4233/alcool-e-removedor?&amp;ftr=facetSubShelf_ss:4233_%C3%81lcool%20e%20removedor" border="0">Álcool e removedor</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4233/desodorizador-e-aromatizantes?&amp;ftr=facetSubShelf_ss:4233_Desodorizador%20e%20Aromatizantes" border="0">Desodorizador e Aromatizantes</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4233/inseticidas?&amp;ftr=facetSubShelf_ss:4233_Inseticidas" border="0">Inseticidas</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4233/casa-em-geral?&amp;ftr=facetSubShelf_ss:4233_Casa%20em%20geral" border="0">Casa em geral</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4233/roupas?&amp;ftr=facetSubShelf_ss:4233_Roupas" border="0">Roupas</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4233/sapatos?&amp;ftr=facetSubShelf_ss:4233_Sapatos" border="0">Sapatos</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4233/descartaveis?&amp;ftr=facetSubShelf_ss:4233_Descart%C3%A1veis" border="0">Descartáveis</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4233/utensilios-para-limpeza?&amp;ftr=facetSubShelf_ss:4233_Utens%C3%ADlios%20para%20limpeza" border="0">Utensílios para limpeza</a><br>
+                                
+                                    </div>
+                                    <div class="nhgpa_list nhgpa_noborder">
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4233/cera-e-cia?&amp;ftr=facetSubShelf_ss:4233_Cera%20e%20cia" border="0">Cera e cia</a><br>
+                                
+                            
+                        </div>
+                            <div class="nhgpa_list nhgpa_last-submenu submenu-banner" data-categoryid="4233" style="display: none;"><div></div></div>
+                        </div>
+                    
+                </li>
+            
+                <li class="item_menu_bebidas">
+                    <a href="http://www.paodeacucar.com/secoes/C4215/bebidas" border="0">
+                        <div class="nhgpa_icon_menu">
+                            <img src="/img/511191.png" border="0" alt="Bebidas" title="Bebidas">
+                        </div> <span>Bebidas</span>
+                    </a>
+
+                    
+
+                    
+
+                        <div class="nhgpa_submenu  ">
+                            <div class="nhgpa_submenu-arrow"></div>
+                        <div class="nhgpa_list nhgpa_first-submenu">
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4215/whiskies-e-destilados?&amp;ftr=facetSubShelf_ss:4215_Whiskies%20e%20Destilados" border="0">Whiskies e Destilados</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4215/refrigerantes?&amp;ftr=facetSubShelf_ss:4215_Refrigerantes" border="0">Refrigerantes</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4215/capsulas-de-cafes-e-chas?&amp;ftr=facetSubShelf_ss:4215_C%C3%A1psulas%20de%20Caf%C3%A9s%20e%20Ch%C3%A1s" border="0">Cápsulas de Cafés e Chás</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4215/cervejas-especiais?&amp;ftr=facetSubShelf_ss:4215_Cervejas%20Especiais" border="0">Cervejas Especiais</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4215/cervejas?&amp;ftr=facetSubShelf_ss:4215_Cervejas" border="0">Cervejas</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4215/vinhos-e-espumantes?&amp;ftr=facetSubShelf_ss:4215_Vinhos%20e%20Espumantes" border="0">Vinhos e Espumantes</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4215/cafes?&amp;ftr=facetSubShelf_ss:4215_Caf%C3%A9s" border="0">Cafés</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4215/shakes?&amp;ftr=facetSubShelf_ss:4215_Shakes" border="0">Shakes</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4215/leite?&amp;ftr=facetSubShelf_ss:4215_Leite" border="0">Leite</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4215/agua-de-coco?&amp;ftr=facetSubShelf_ss:4215_%C3%81gua%20de%20Coco" border="0">Água de Coco</a><br>
+                                
+                                    </div>
+                                    <div class="nhgpa_list nhgpa_noborder">
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4215/isotonicos?&amp;ftr=facetSubShelf_ss:4215_Isot%C3%B4nicos" border="0">Isotônicos</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4215/chas-e-mates?&amp;ftr=facetSubShelf_ss:4215_Ch%C3%A1s%20e%20Mates" border="0">Chás e Mates</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4215/vodka-cachacas-e-saques?&amp;ftr=facetSubShelf_ss:4215_Vodka,%20Cacha%C3%A7as%20e%20Saqu%C3%AAs" border="0">Vodka, Cachaças e Saquês</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4215/achocolatados-bebidas-lacteas-e-de-soja?&amp;ftr=facetSubShelf_ss:4215_Achocolatados,%20Bebidas%20L%C3%A1cteas%20e%20de%20Soja" border="0">Achocolatados, Bebidas Lácteas e de Soja</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4215/aguas?&amp;ftr=facetSubShelf_ss:4215_%C3%81guas" border="0">Águas</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4215/sucos-e-refrescos?&amp;ftr=facetSubShelf_ss:4215_Sucos%20e%20Refrescos" border="0">Sucos e Refrescos</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4215/bebidas-gaseficadas?&amp;ftr=facetSubShelf_ss:4215_Bebidas%20gaseficadas" border="0">Bebidas gaseficadas</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4215/energeticos?&amp;ftr=facetSubShelf_ss:4215_Energ%C3%A9ticos" border="0">Energéticos</a><br>
+                                
+                            
+                        </div>
+                            <div class="nhgpa_list nhgpa_last-submenu submenu-banner" data-categoryid="4215"></div>
+                        </div>
+                    
+                </li>
+            
+                <li class="item_menu_feira">
+                    <a href="http://www.paodeacucar.com/secoes/C4205/feira" border="0">
+                        <div class="nhgpa_icon_menu">
+                            <img src="/img/511149.png" border="0" alt="Feira" title="Feira">
+                        </div> <span>Feira</span>
+                    </a>
+
+                    
+
+                    
+
+                        <div class="nhgpa_submenu  ">
+                            <div class="nhgpa_submenu-arrow"></div>
+                        <div class="nhgpa_list nhgpa_first-submenu">
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4205/legumes?&amp;ftr=facetSubShelf_ss:4205_Legumes" border="0">Legumes</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4205/ovos?&amp;ftr=facetSubShelf_ss:4205_Ovos" border="0">Ovos</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4205/pronto-para-consumo?&amp;ftr=facetSubShelf_ss:4205_Pronto%20para%20Consumo" border="0">Pronto para Consumo</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4205/alho?&amp;ftr=facetSubShelf_ss:4205_Alho" border="0">Alho</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4205/tempero?&amp;ftr=facetSubShelf_ss:4205_Tempero" border="0">Tempero</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4205/temperos-frescos?&amp;ftr=facetSubShelf_ss:4205_Temperos%20Frescos" border="0">Temperos Frescos</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4205/cogumelos?&amp;ftr=facetSubShelf_ss:4205_Cogumelos" border="0">Cogumelos</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4205/verduras?&amp;ftr=facetSubShelf_ss:4205_Verduras" border="0">Verduras</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4205/organicos?&amp;ftr=facetSubShelf_ss:4205_Org%C3%A2nicos" border="0">Orgânicos</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4205/frutas-secas?&amp;ftr=facetSubShelf_ss:4205_Frutas%20Secas" border="0">Frutas Secas</a><br>
+                                
+                                    </div>
+                                    <div class="nhgpa_list nhgpa_noborder">
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4205/frutas-especiais?&amp;ftr=facetSubShelf_ss:4205_Frutas%20Especiais" border="0">Frutas Especiais</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4205/frutas?&amp;ftr=facetSubShelf_ss:4205_Frutas" border="0">Frutas</a><br>
+                                
+                            
+                        </div>
+                            <div class="nhgpa_list nhgpa_last-submenu submenu-banner" data-categoryid="4205"></div>
+                        </div>
+                    
+                </li>
+            
+                <li class="item_menu_carnes">
+                    <a href="http://www.paodeacucar.com/secoes/C4226/carnes" border="0">
+                        <div class="nhgpa_icon_menu">
+                            <img src="/img/511150.png" border="0" alt="Carnes" title="Carnes">
+                        </div> <span>Carnes</span>
+                    </a>
+
+                    
+
+                    
+
+                        <div class="nhgpa_submenu half-menu ">
+                            <div class="nhgpa_submenu-arrow"></div>
+                        <div class="nhgpa_list nhgpa_first-submenu">
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4226/carpaccio?&amp;ftr=facetSubShelf_ss:4226_Carpaccio" border="0">Carpaccio</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4226/aves?&amp;ftr=facetSubShelf_ss:4226_Aves" border="0">Aves</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4226/bovinos?&amp;ftr=facetSubShelf_ss:4226_Bovinos" border="0">Bovinos</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4226/suinos?&amp;ftr=facetSubShelf_ss:4226_Su%C3%ADnos" border="0">Suínos</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4226/exoticas-e-especiais?&amp;ftr=facetSubShelf_ss:4226_Ex%C3%B3ticas%20e%20Especiais" border="0">Exóticas e Especiais</a><br>
+                                
+                            
+                        </div>
+                            <div class="nhgpa_list nhgpa_last-submenu submenu-banner" data-categoryid="4226"></div>
+                        </div>
+                    
+                </li>
+            
+                <li class="item_menu_alimentos">
+                    <a href="http://www.paodeacucar.com/secoes/C4223/alimentos" border="0">
+                        <div class="nhgpa_icon_menu">
+                            <img src="/img/511151.png" border="0" alt="Alimentos" title="Alimentos">
+                        </div> <span>Alimentos</span>
+                    </a>
+
+                    
+
+                    
+
+                        <div class="nhgpa_submenu  ">
+                            <div class="nhgpa_submenu-arrow"></div>
+                        <div class="nhgpa_list nhgpa_first-submenu">
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4223/creme-de-leite?&amp;ftr=facetSubShelf_ss:4223_Creme%20de%20Leite" border="0">Creme de Leite</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4223/sopas-e-cremes?&amp;ftr=facetSubShelf_ss:4223_Sopas%20e%20Cremes" border="0">Sopas e Cremes</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4223/sal-e-pimenta?&amp;ftr=facetSubShelf_ss:4223_Sal%20e%20Pimenta" border="0">Sal e Pimenta</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4223/azeites?&amp;ftr=facetSubShelf_ss:4223_Azeites" border="0">Azeites</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4223/cafes?&amp;ftr=facetSubShelf_ss:4223_Caf%C3%A9s" border="0">Cafés</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4223/acucar-e-adocantes?&amp;ftr=facetSubShelf_ss:4223_A%C3%A7%C3%BAcar%20e%20Ado%C3%A7antes" border="0">Açúcar e Adoçantes</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4223/molhos-de-tomate?&amp;ftr=facetSubShelf_ss:4223_Molhos%20de%20Tomate" border="0">Molhos de Tomate</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4223/ovos?&amp;ftr=facetSubShelf_ss:4223_Ovos" border="0">Ovos</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4223/feijao?&amp;ftr=facetSubShelf_ss:4223_Feij%C3%A3o" border="0">Feijão</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4223/farinhas-e-farofas?&amp;ftr=facetSubShelf_ss:4223_Farinhas%20e%20Farofas" border="0">Farinhas e Farofas</a><br>
+                                
+                                    </div>
+                                    <div class="nhgpa_list nhgpa_noborder">
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4223/arroz?&amp;ftr=facetSubShelf_ss:4223_Arroz" border="0">Arroz</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4223/oleos?&amp;ftr=facetSubShelf_ss:4223_%C3%93leos" border="0">Óleos</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4223/conservas-e-enlatados?&amp;ftr=facetSubShelf_ss:4223_Conservas%20e%20Enlatados" border="0">Conservas e Enlatados</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4223/outros-graos?&amp;ftr=facetSubShelf_ss:4223_Outros%20Gr%C3%A3os" border="0">Outros Grãos</a><br>
+                                
+                            
+                        </div>
+                            <div class="nhgpa_list nhgpa_last-submenu submenu-banner" data-categoryid="4223"></div>
+                        </div>
+                    
+                </li>
+            
+                <li class="item_menu_bebes">
+                    <a href="http://www.paodeacucar.com/secoes/C4229/bebes" border="0">
+                        <div class="nhgpa_icon_menu">
+                            <img src="/img/511189.png" border="0" alt="Bebês" title="Bebês">
+                        </div> <span>Bebês</span>
+                    </a>
+
+                    
+
+                    
+
+                        <div class="nhgpa_submenu  ">
+                            <div class="nhgpa_submenu-arrow"></div>
+                        <div class="nhgpa_list nhgpa_first-submenu">
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4229/hora-do-banho?&amp;ftr=facetSubShelf_ss:4229_Hora%20do%20Banho" border="0">Hora do Banho</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4229/lencos-umedecidos?&amp;ftr=facetSubShelf_ss:4229_Len%C3%A7os%20Umedecidos" border="0">Lenços Umedecidos</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4229/protecao-solar?&amp;ftr=facetSubShelf_ss:4229_Prote%C3%A7%C3%A3o%20Solar" border="0">Proteção Solar</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4229/colonias-e-hidratantes?&amp;ftr=facetSubShelf_ss:4229_Col%C3%B4nias%20e%20Hidratantes" border="0">Colônias e Hidratantes</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4229/protecao-contra-insetos?&amp;ftr=facetSubShelf_ss:4229_Prote%C3%A7%C3%A3o%20Contra%20Insetos" border="0">Proteção Contra Insetos</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4229/acessorios-para-a-troca?&amp;ftr=facetSubShelf_ss:4229_Acess%C3%B3rios%20para%20a%20troca" border="0">Acessórios para a troca</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4229/higiene-bucal?&amp;ftr=facetSubShelf_ss:4229_Higiene%20Bucal" border="0">Higiene Bucal</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4229/fraldas?&amp;ftr=facetSubShelf_ss:4229_Fraldas" border="0">Fraldas</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4229/mamaes-gestantes?&amp;ftr=facetSubShelf_ss:4229_Mam%C3%A3es%20Gestantes" border="0">Mamães Gestantes</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4229/outros-alimentos?&amp;ftr=facetSubShelf_ss:4229_Outros%20Alimentos" border="0">Outros Alimentos</a><br>
+                                
+                                    </div>
+                                    <div class="nhgpa_list nhgpa_noborder">
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4229/papinha?&amp;ftr=facetSubShelf_ss:4229_Papinha" border="0">Papinha</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4229/leite-e-formula-infantil?&amp;ftr=facetSubShelf_ss:4229_Leite%20e%20F%C3%B3rmula%20Infantil" border="0">Leite e Fórmula Infantil</a><br>
+                                
+                            
+                        </div>
+                            <div class="nhgpa_list nhgpa_last-submenu submenu-banner" data-categoryid="4229"></div>
+                        </div>
+                    
+                </li>
+            
+                <li class="item_menu_perfumaria">
+                    <a href="http://www.paodeacucar.com/secoes/C4231/perfumaria" border="0">
+                        <div class="nhgpa_icon_menu">
+                            <img src="/img/511190.png" border="0" alt="Perfumaria" title="Perfumaria">
+                        </div> <span>Perfumaria</span>
+                    </a>
+
+                    
+
+                    
+
+                        <div class="nhgpa_submenu  ">
+                            <div class="nhgpa_submenu-arrow"></div>
+                        <div class="nhgpa_list nhgpa_first-submenu">
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4231/algodao-hastes-flexiveis-e-lencos?&amp;ftr=facetSubShelf_ss:4231_Algod%C3%A3o,%20hastes%20flex%C3%ADveis%20e%20len%C3%A7os" border="0">Algodão, hastes flexíveis e lenços</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4231/protetor-solar?&amp;ftr=facetSubShelf_ss:4231_Protetor%20solar" border="0">Protetor solar</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4231/depilacao?&amp;ftr=facetSubShelf_ss:4231_Depila%C3%A7%C3%A3o" border="0">Depilação</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4231/rosto?&amp;ftr=facetSubShelf_ss:4231_Rosto" border="0">Rosto</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4231/higiene-bucal?&amp;ftr=facetSubShelf_ss:4231_Higiene%20bucal" border="0">Higiene bucal</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4231/corpo?&amp;ftr=facetSubShelf_ss:4231_Corpo" border="0">Corpo</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4231/cabelo?&amp;ftr=facetSubShelf_ss:4231_Cabelo" border="0">Cabelo</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4231/desodorantes?&amp;ftr=facetSubShelf_ss:4231_Desodorantes" border="0">Desodorantes</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4231/fraldas-geriatricas?&amp;ftr=facetSubShelf_ss:4231_Fraldas%20Geri%C3%A1tricas" border="0">Fraldas Geriátricas</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4231/sabonete?&amp;ftr=facetSubShelf_ss:4231_Sabonete" border="0">Sabonete</a><br>
+                                
+                                    </div>
+                                    <div class="nhgpa_list nhgpa_noborder">
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4231/papel-higienico?&amp;ftr=facetSubShelf_ss:4231_Papel%20higi%C3%AAnico" border="0">Papel higiênico</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4231/maos-e-pes?&amp;ftr=facetSubShelf_ss:4231_M%C3%A3os%20e%20p%C3%A9s" border="0">Mãos e pés</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4231/barba?&amp;ftr=facetSubShelf_ss:4231_Barba" border="0">Barba</a><br>
+                                
+                            
+                                <a href="http://www.paodeacucar.com/secoes/C4231/absorventes-e-higiene-intima?&amp;ftr=facetSubShelf_ss:4231_Absorventes%20e%20higiene%20%C3%ADntima" border="0">Absorventes e higiene íntima</a><br>
+                                
+                            
+                        </div>
+                            <div class="nhgpa_list nhgpa_last-submenu submenu-banner" data-categoryid="4231"></div>
+                        </div>
+                    
+                </li>
+            
+        
+            <li>
+                <div class="nhgpa_icon_menu nhgpa_2lines">
+                    <img src="/img/525882.png" border="0" alt="Todos produtos" title="Todos produtos"></div> Viva<br> Vinhos
+                <div class="nhgpa_submenu clienteMais" style="margin-left: -469px;">
+                    <div class="nhgpa_submenu-arrow" style="margin-left: 462px; border-bottom-color: rgb(109, 60, 93) !important;"></div>
+                    <a href="http://www.paodeacucar.com/viva-vinhos" target="_blank">
+                        <img src="/img/525883.png" border="0" alt="Viva Vinhos" title="Viva Vinhos" class="nhgpa_last">
+                    </a>
+                </div>
+            </li>
+
+            <li>
+                <a href="http://www.paodeacucar.com/ofertas" target="_self">
+                    <div class="nhgpa_icon_menu">
+                        <img src="/img/511197.png" border="0" alt="Todos produtos" title="Todos produtos" class="nhgpa_last"></div> OFERTAS
+                </a>
+            </li>
+            <li>
+                <div class="nhgpa_list clienteMais">
+
+                    <img src="/img/512760.png" border="0" alt="Cliente mais" title="Cliente mais" class="nhgpa_last">
+                </div>
+
+                <div class="nhgpa_submenu clienteMais">
+                    <div class="nhgpa_submenu-arrow" style="margin-left: 395px;"></div>
+                    <a href="https://www.paodeacucarmais.com.br/" target="_blank">
+                        <img src="/img/512779.png" border="0" alt="Cliente mais" title="Cliente mais" class="nhgpa_last">
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="clear"></div>
+<!-- END comp(menu,1423) --></div>
