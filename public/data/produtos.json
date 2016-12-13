@@ -2,23 +2,116 @@
 	"produtos": [
 		{
 			"id": "1",
-			"descricao": "Produto1",
-			"preco": "9.99"
+			"descricao": "KIT COM 12 PANETTONES COM GOTAS DE CHOCOLATE QUALITÁ CAIXA 400G CADA",
+			"preco": "95.88",
+			"imagem": "/index/uploads/1/39/527039x200x200.jpg",
+			"zoom": "/zoom/527039.jpg"
 		},
 		{
 			"id": "2",
-			"descricao": "Produto2",
-			"preco": "19.99"
+			"descricao": "Cesta de Natal Classic",
+			"preco": "32.90",
+			"imagem": "/index/uploads/1/457/511457x200x200.jpg",
+			"zoom": "/zoom/511457.jpg"
 		},
 		{
 			"id": "3",
-			"descricao": "Produto3",
-			"preco": "30.99"
+			"descricao": "Kit Natalino SEARA Contém 1 Fiesta Temperado 3kg 11 Litros",
+			"preco": "59.90",
+			"imagem": "/index/uploads/1/492/526492x200x200.jpg",
+			"zoom": "/zoom/526492.jpg"
 		},
 		{
 			"id": "4",
-			"descricao": "Produto4",
-			"preco": "20.99"
+			"descricao": "Kit Realize SEARA Contém 1 Fiesta Temperado 3kg 1 Lombo Temperado 1,2kg 1 Pernil Desossado Temperado 1,1kg 1 Bolsa Térmica 15 Litros",
+			"preco": "99.90",
+			"imagem": "/index/uploads/1/498/526498x200x200.jpg",
+			"zoom": "/zoom/526498.jpg"
+		},
+		{
+			"id": "5",
+			"descricao": "Kit Natalino SEARA Contém 1 Peru Temperado 4kg 1 Bolsa Térmica 11 Litros",
+			"preco": "69.90",
+			"imagem": "/index/uploads/1/493/526493x200x200.jpg",
+			"zoom": "/zoom/526493.jpg"
+		}
+		,
+		{
+			"id": "6",
+			"descricao": "Panettone com Doce de Leite Gateau de Moça NESTLÉ Caixa 550g",
+			"preco": "27.90",
+			"imagem": "/index/uploads/1/430/509430x200x200.jpg",
+			"zoom": "/zoom/509430.jpg"
+		},
+		{
+			"id": "7",
+			"descricao": "Panettone Prestígio NESTLÉ Caixa 500g",
+			"preco": "24.90",
+			"imagem": "/index/uploads/1/44/524044x200x200.jpg",
+			"zoom": "/zoom/524044.jpg"
+		},
+		{
+			"id": "8",
+			"descricao": "Cesta de Natal Vip",
+			"preco": "99.90",
+			"imagem": "/index/uploads/1/296/511296x200x200.jpg",
+			"zoom": "/zoom/511296.jpg"
+		},
+		{
+			"id": "9",
+			"descricao": "Kit com 12 Panettones com Frutas QUALITÁ Caixa 400g Cada",
+			"preco": "95.88",
+			"imagem": "/index/uploads/1/42/527042x200x200.jpg",
+			"zoom": "/zoom/527042.jpg"
+		},
+		{
+			"id": "10",
+			"descricao": "Ovos Branco Grandes QUALITÁ Bandeja com 12 Unidades",
+			"preco": "6.99",
+			"imagem": "/index/uploads/1/121/473121x200x200.jpg",
+			"zoom": "/zoom/473121.jpg"
+		},
+		{
+			"id": "11",
+			"descricao": "Sabão em Pó OMO Multiação 4kg",
+			"preco": "37.53",
+			"imagem": "/index/uploads/1/731/527731x200x200.jpg",
+			"zoom": "/zoom/527731.jpg"
+		},
+		{
+			"id": "12",
+			"descricao": "Cesta de Natal QUALITÁ",
+			"preco": "42.49",
+			"imagem": "/index/uploads/1/720/511720x200x200.jpg",
+			"zoom": "/zoom/511720.jpg"
+		},
+		{
+			"id": "13",
+			"descricao": "Whisky Americano JACK DANIEL'S Garrafa 1 Litro",
+			"preco": "129.90",
+			"imagem": "/index/uploads/1/200/477200x200x200.jpg",
+			"zoom": "/zoom/477200.jpg"
+		},
+		{
+			"id": "14",
+			"descricao": "Cesta de Natal Premium ",
+			"preco": "61.90",
+			"imagem": "/index/uploads/1/276/511276x200x200.jpg",
+			"zoom": "/zoom/511276.jpg"
+		},
+		{
+			"id": "15",
+			"descricao": "Desodorante Antitranspirante Aerosol DOVE Original 169ML",
+			"preco": "16.50",
+			"imagem": "/index/uploads/1/695/506695x200x200.jpg",
+			"zoom": "/zoom/506695.jpg"
+		},
+		{
+			"id": "16",
+			"descricao": "Cerveja SKOL 269ml - Caixa com 15 Unidades",
+			"preco": "37.35",
+			"imagem": "/index/uploads/1/334/504334x200x200.jpg",
+			"zoom": "/zoom/504334.jpg"
 		}
 	]
 }

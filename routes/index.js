@@ -7,7 +7,7 @@ produtos = produtos.produtos;
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('pages/index', {produtos: produtos});
+  res.render('index', {produtos: produtos});
 });
 
 router.get('/produto/:id', function(req, res) {
@@ -17,11 +17,11 @@ router.get('/produto/:id', function(req, res) {
 		if(produto.id === idProduto)
 			produtoRender = produto;
 	});
-  res.render('pages/produto', {produto: produtoRender, produtos: produtos});
+  res.render('produto', {produto: produtoRender, produtos: produtos});
 });
 
 router.get('/carrinho', function(req, res) {
-  res.render('pages/carrinho');
+  res.render('carrinho');
 });
 
 module.exports = router;

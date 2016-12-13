@@ -1,13 +1,32 @@
 var carrinhoVazio = `
-	<div id="formBasket">
-	    <div class="cart-empty">
-	        <h3 class="cart-empty__heading icon icon--cart">Ainda não existem itens em seu carrinho</h3>
-	        <a href="/" title="Voltar as compras" class="button button-pill button-pill--green">Voltar as compras</a>
-	    </div>
-	</div>
+    <div class="cart-empty">
+        <h3 class="cart-empty__heading icon icon--cart">Ainda não existem itens em seu carrinho</h3>
+        <a href="https://chk.paodeacucar.com/" title="Voltar as compras" class="button button-pill button-pill--green">Voltar as compras</a>
+    </div>
 	`
 
 var htmlInicio = `
+     <header class="view-header view-header--margin-top view-header--no-border">
+        <h1 class="view-header__heading">Carrinho de Compras</h1>
+        <p class="view-header__description">Confira os ítens da sua lista de compras e se estiver tudo certo, finalize sua compra. É <em>prático</em>, <em>rápido</em> e <em>fácil</em>.</p>
+    </header>
+
+
+    
+
+        <div class="checkout-controls group">
+            <a href="/" title="Voltar às compras" class="button button-pill button-pill--green checkout-controls__left">Voltar às compras</a>
+
+            <div class="checkout-controls__right">
+
+                <a onclick="limparCarrinho();" title="Esvaziar carrinho" class="button button-pill button-pill--green " id="emptyBasket">Esvaziar carrinho</a>
+
+                <a href="#" title="Imprimir" class="button button-pill button-pill--green " id="printBasket">Imprimir</a>
+
+                
+            </div>
+        </div> 
+
 	<div id="formBasket">
         <div class="inputHiddenCheckout">
             <input type="hidden" id="hasMessage" value="false">
@@ -136,7 +155,7 @@ var produtosNoCarrinho = function() {
                     <td class="prdImg">
                         <input type="hidden" name="productList[0].id" value="216405281">
                         <a href="/produto/`+produtoCarrinho.id+`">
-                            <img src="#">
+                            <img height="50" width="50" src="`+produtoCarrinho.imagem+`">
                         </a>
                     </td>
                     <td class="prdName">
@@ -154,7 +173,7 @@ var produtosNoCarrinho = function() {
 
                         <div class="product-qty">
                             <button type="button" class="button button-pill button-pill--circle button-pill--green" onclick="diminuirQuantidade(`+produtoCarrinho.id+`); produtosNoCarrinho();">-</button>
-                            <input readonly="readonly" type="text" min="1" max="1000" class="field field--rounded product-qty__field quantityListener" id="produto`+produtoCarrinho.id+`" name="productList[0].quantity" value="`+produtoCarrinho.quantidade+`">
+                            <input type="text" min="1" max="1000" class="field field--rounded product-qty__field quantityListener" id="produto`+produtoCarrinho.id+`" name="productList[0].quantity" value="`+produtoCarrinho.quantidade+`">
                             <button type="button" class="button button-pill button-pill--circle button-pill--green" onclick="aumentarQuantidade(`+produtoCarrinho.id+`); produtosNoCarrinho();">+</button>
                         </div>
 
